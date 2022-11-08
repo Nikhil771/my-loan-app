@@ -1,0 +1,385 @@
+@import "../../../assets/css/color.scss";
+// footer {
+//     background-color: #000066;
+//     padding-top: 350px;
+//     margin-top: -230px;
+// }
+footer {
+  background-color: #1976d2;
+  padding: 50px 0 48px;
+  margin-top: 0px;
+  p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    padding-right: 15%;
+    margin-bottom: 40px;
+    opacity: 0.5;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .citiesList {
+    margin-top: 40px;
+    ul {
+      li {
+        font-weight: 500;
+        font-size: 18px;
+        color: $color-white;
+        opacity: 0.5;
+        display: inline-block;
+        margin-right: 7px;
+        border-right: 2px solid #8080b3;
+        line-height: 1;
+        padding-right: 7px;
+        &:last-child {
+          margin-right: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 28px;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 16px;
+}
+footer ul li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+.text-right {
+  text-align: right;
+}
+.footerBottom {
+  border-top: #1976d2 3px solid;
+  padding-top: 48px;
+  padding-bottom: 0px;
+  margin-top: 90px;
+
+  p {
+    font-size: 14px;
+    opacity: 1;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .powered-by-2 {
+    p {
+      font-size: 12px;
+      span {
+        color: #638ecf;
+      }
+    }
+    ul {
+      li {
+        color: $color-white;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &.footer-app-section {
+    strong {
+      font-size: 14px;
+      opacity: 1;
+      padding: 0;
+      color: #fff;
+      margin-right: 20px;
+    }
+    a {
+      margin-right: 0;
+    }
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+.footerBottom {
+  a {
+    display: inline-block;
+    margin: 0 40px 0 0;
+    transition: 0.3s;
+    svg {
+      color: $color-white;
+    }
+  }
+}
+.footerLogo {
+  margin-bottom: 28px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .mobileFooter,
+  .mobile-social {
+    display: none;
+  }
+}
+@media (min-width: 1526px) and (max-width: 1850px) {
+  footer {
+    padding: 50px 0 130px;
+  }
+}
+@media (max-width: 1525px) {
+  footer {
+    padding: 50px 0 110px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .footerBottom {
+    a {
+      margin: 0 15px 0 0;
+    }
+  }
+  footer {
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    ul {
+      li {
+        a {
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  footer {
+    .col-md-12 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      padding-right: 0;
+    }
+  }
+  .footerBottom {
+    margin-top: 0;
+    a {
+      margin: 0 15px 0 0;
+      img {
+        width: 20px;
+      }
+    }
+    .footerBottom {
+      margin-top: 0;
+      a {
+        margin: 0 15px 0 0;
+        img {
+          width: 20px;
+        }
+      }
+      &.footer-app-section {
+        a {
+          img {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mobileFooter {
+    .MuiPaper-root {
+      background: none;
+      border-bottom: 2px solid #1976d2 !important;
+      box-shadow: none;
+      &:last-child {
+        border: none !important;
+      }
+    }
+  }
+
+  footer p.MuiTypography-root {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  footer .MuiButtonBase-root {
+    padding-left: 0 !important;
+    box-shadow: none;
+  }
+  // .MuiButtonBase-root svg {
+  //   color: #ffffff;
+  // }
+  footer ul li a {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .MuiButtonBase-root.Mui-expanded {
+    min-height: 0;
+  }
+  .MuiButtonBase-root.Mui-expanded {
+    margin: 0;
+  }
+  footer ul {
+    margin-bottom: 0;
+  }
+  .MuiButtonBase-root.Mui-expanded:first-of-type {
+    margin: 0;
+  }
+  .mobileFooter .MuiButtonBase-root:last-child {
+    border: none !important;
+  }
+  .mobileFooter {
+    .MuiButtonBase-root.MuiAccordionSummary-root.Mui-expanded {
+      min-height: 48px;
+    }
+    .MuiAccordionSummary-content.Mui-expanded {
+      margin: 0 !important;
+    }
+    .MuiPaper-root.MuiAccordion-root.Mui-expanded {
+      margin: 0;
+    }
+    svg {
+      color: $color-white;
+    }
+  }
+  .MobileFooterHide {
+    display: none;
+  }
+  footer p {
+    padding-right: 0;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .mobile-social a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .footerNone {
+    display: none;
+  }
+  .footerBottom .text-center {
+    text-align: left !important;
+  }
+  .footerBottom {
+    margin-top: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    .powered-by {
+      p {
+        margin-bottom: 105px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    &.footer-app-section {
+      margin-top: 15px;
+      a {
+        img {
+          width: 80px;
+        }
+      }
+    }
+    .text-md-end {
+      p {
+        font-weight: 700;
+        font-style: 12px;
+      }
+    }
+    .powered-by-2 {
+      p {
+        margin-bottom: 12px;
+      }
+    }
+  }
+  footer {
+    padding: 30px 0 65px;
+    .container {
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+    }
+    .mobile-social a {
+      width: 18px;
+      margin: 0 6px;
+      transition: 0.3s;
+      &:last-child {
+        margin-right: 2px;
+      }
+      svg {
+        color: $color-white;
+        font-size: 18px;
+      }
+    }
+    .citiesList {
+      margin-top: 0;
+      ul {
+        li {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .footerLogo {
+    margin-bottom: 0;
+  }
+  footer .col-md-12 {
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 450px) {
+  footer .mt-3 {
+    margin-top: 4px !important;
+  }
+  .mobile-social a {
+    margin: 0 5px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+footer .citiesList ul li a {
+  color: $color-white;
+  opacity: 1;
+}
+.legel {
+  p {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
