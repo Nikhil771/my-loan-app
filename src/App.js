@@ -1,6 +1,6 @@
 import React from "react";
 import OpenRoutes from "./openRoute";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
