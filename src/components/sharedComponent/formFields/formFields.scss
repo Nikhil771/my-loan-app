@@ -1,0 +1,97 @@
+@import "../../../assets/css/color.scss";
+
+.form-custom-design {
+  .col-sm-12 {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .MuiOutlinedInput-root {
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $color-blue-dark;
+        border-width: 1px;
+      }
+    }
+  }
+  .MuiOutlinedInput-notchedOutline {
+    color: $color-blue-dark !important;
+    height: 80px;
+    border: 0.5px solid rgba(0, 0, 102, 0.3);
+    border-radius: 50px;
+
+    legend {
+      margin-left: 50px;
+      width: 150px;
+    }
+  }
+  .MuiSelect-select {
+    height: 40px !important;
+  }
+  .MuiFormControl-root {
+    .MuiSvgIcon-root {
+      right: 27px;
+    }
+  }
+  .MuiOutlinedInput-input {
+    height: 40px;
+    padding-left: 75px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-blue-dark;
+    background-repeat: no-repeat;
+    background-position: 35px center;
+
+    &#name {
+      background-image: url(../../../assets/images/user-icon.svg);
+    }
+    &#mobile {
+      background-image: url(../../../assets/images/call-icon.svg);
+    }
+    &#salary {
+      background-image: url(../../../assets/images/salary-income-icon.svg);
+    }
+    &#pin {
+      background-image: url(../../../assets/images/map-icon.svg);
+    }
+    &#otp {
+      background-image: url(../../../assets/images/map-icon.svg);
+    }
+    &#search-team {
+      background-image: url(../../../assets/images/team-icon.svg);
+    }
+    &#search-location {
+      background-image: url(../../../assets/images/location-icon.svg);
+    }
+    &#referred_by {
+      background-image: url(../../../assets/images/Register2.svg);
+      background-position: 30px center;
+      background-size: 28px;
+    }
+  }
+  .MuiInputLabel-outlined {
+    left: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    color: $color-blue-dark;
+    opacity: 0.2;
+    transform: translate(14px, 25px) scale(1);
+    &.Mui-focused {
+      font-size: 16px;
+      font-weight: 700;
+      opacity: 0.5;
+      transform: translate(14px, -9px) scale(0.75);
+      color: $color-blue-dark;
+    }
+    &.MuiFormLabel-filled {
+      transform: translate(14px, -9px) scale(0.75);
+      opacity: 0.5;
+    }
+  }
+  .MuiFormHelperText-root {
+    margin-left: 50px;
+    margin-top: 8px;
+  }
+}
