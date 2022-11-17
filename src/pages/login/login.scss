@@ -1,0 +1,329 @@
+@import "../../assets/css/color";
+
+.register {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  .description {
+    color: $color-white;
+    font-weight: 400;
+    font-size: 48px;
+    padding: 40px 40px 100px;
+    text-align: left;
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: $color-white;
+      span {
+        font-weight: 700;
+      }
+    }
+    p {
+      line-height: 58px;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+  }
+  .sign-form-content {
+    font-family: "Montserrat"; // import font family
+    font-style: normal;
+    color: $color-blue-dark;
+    text-align: left;
+    margin-bottom: 70px;
+    &-title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+    &-description {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      opacity: 0.5;
+      margin-bottom: 32px;
+      span {
+        font-weight: 700;
+      }
+    }
+    .icon-circle {
+      background-color: $color-purple-light;
+      border-radius: 48px;
+      height: 72px;
+      width: 72px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      .icon {
+      }
+    }
+    .icon-description {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .button {
+    color: $color-white;
+    background-color: $color-red-light;
+    border-radius: 35px;
+    padding: 10px;
+    height: 60px;
+    margin-top: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+    &:hover {
+      background-color: $color-red-light;
+    }
+    &:disabled {
+      color: $color-white;
+    }
+  }
+}
+// footer {
+//   display: none;
+// }
+// .header {
+//   .col-md-6,
+//   .col-md-4 {
+//     display: none;
+//   }
+// }
+.terms-and-conditions {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  .MuiFormControlLabel-root {
+    align-items: flex-start;
+    .MuiCheckbox-root {
+      top: -8px;
+    }
+    .MuiFormControlLabel-label {
+      font-size: 14px;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        &:hover {
+          color: #212529 !important;
+        }
+      }
+    }
+  }
+}
+.referral-code {
+  .MuiFormControlLabel-label {
+    font-size: 14px;
+  }
+  .MuiFormControl-root {
+    margin-bottom: 20px;
+  }
+}
+.tersmValidaiton {
+  padding-left: 33px;
+}
+@media screen and (max-width: 1525px) {
+  .register {
+    .sign-form-content {
+      margin-bottom: 20px;
+      .icon-description {
+        font-size: 14px;
+      }
+    }
+    .sign-form-content-title {
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+    .sign-form-content-description {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .button {
+      margin-top: 20px;
+    }
+    .description {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  .custom-card {
+    min-height: 490px;
+    width: 320px;
+    height: auto;
+  }
+  .form-custom-design {
+    .col-sm-12 {
+      margin-bottom: 0px;
+    }
+
+    .MuiOutlinedInput-input {
+      height: 18px;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      height: 55px;
+    }
+    .MuiInputLabel-outlined {
+      transform: translate(14px, 14px) scale(1);
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .custom-card {
+    width: 100%;
+  }
+  .register {
+    .sign-form-content-title {
+      font-size: 32px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .register {
+    height: auto;
+    margin: 10px 0 50px;
+    .button {
+      margin-top: 45px;
+    }
+    .sign-form-content-title {
+      margin-bottom: 16px;
+    }
+    .sign-form-content-description {
+      margin-bottom: 32px;
+      br {
+        display: none;
+      }
+    }
+    .sign-form-content {
+      margin-bottom: 30px;
+      .icon-circle {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+  .custom-card {
+    height: auto;
+    margin: 0px auto 46px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .custom-card {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .register {
+    height: auto;
+    margin: 10px 0 50px;
+    padding-top: 20px;
+    .sign-form-content-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .icon-circle {
+      margin-bottom: 12px;
+    }
+    .sign-form-content-description {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .sign-form-content {
+      margin-bottom: 44x;
+      .icon-circle {
+        margin-right: 0;
+        img {
+          width: 19px;
+        }
+      }
+      .icon-description {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+  }
+  .custom-card {
+    height: auto;
+    margin: 30px auto 46px;
+  }
+  .form-custom-design {
+    .MuiInputLabel-outlined {
+      transform: translate(-8px, 17px) scale(1);
+      font-size: 12px;
+      &.MuiFormLabel-filled {
+        transform: translate(-5px, -7px) scale(0.75);
+        opacity: 0.5;
+      }
+      &.Mui-focused {
+        transform: translate(-5px, -7px) scale(0.75);
+      }
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      legend {
+        margin-left: 40px;
+        width: 150px;
+      }
+    }
+
+    .MuiOutlinedInput-input {
+      height: 18px;
+      padding-left: 50px;
+      background-position: 23px center;
+      &#name {
+        background-size: 17px;
+      }
+      &#mobile {
+        background-size: 20px;
+      }
+      &#pin {
+        background-size: 17px;
+      }
+      &#referred_by {
+        background-position: 20px center;
+        background-size: 23px;
+      }
+    }
+  }
+  .referral-code {
+    & + .referral-code {
+      margin-top: 10px;
+    }
+    .MuiFormControl-root {
+      margin-bottom: 0;
+    }
+    .MuiFormControlLabel-label {
+      font-size: 12px;
+    }
+  }
+  .terms-and-conditions {
+    margin-bottom: 0px;
+
+    .MuiFormControlLabel-root {
+      .MuiFormControlLabel-label {
+        font-size: 12px;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// a,
+// a:hover {
+//   color: #000 !important;
+//   text-decoration: none !important;
+// }
+.text-blue {
+  color: #0015a7 !important;
+}
+.grecaptcha-badge {
+  bottom: 100px !important;
+}
