@@ -21,3 +21,15 @@ export function getPhone() {
 export function deletePhone() {
   return localStorage.removeItem("phone");
 }
+
+export function setOTPVerified(isVerified) {
+  return localStorage.setItem('otpVerified', isVerified);
+}
+
+export function getOTPVerified() {
+  return localStorage.getItem('otpVerified');
+}
+
+export function deleteOTPVerified() {
+  return localStorage.removeItem('otpVerified');
+}
